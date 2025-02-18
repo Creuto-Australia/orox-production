@@ -15,18 +15,18 @@ const navigation = {
       href: "#",
       icon: "/icons/socials/Item-1.svg",
     },
-    {
-      name: "Facebook",
-      href: "#",
-      icon: "/icons/socials/Item-2.svg",
-    },
+    // {
+    //   name: "Facebook",
+    //   href: "#",
+    //   icon: "/icons/socials/Item-2.svg",
+    // },
+    // {
+    //   name: "Facebook",
+    //   href: "#",
+    //   icon: "/icons/socials/Item-3.svg",
+    // },
     {
       name: "Twitter",
-      href: "#",
-      icon: "/icons/socials/Item-3.svg",
-    },
-    {
-      name: "TikTok",
       href: "#",
       icon: "/icons/socials/Item-4.svg",
     },
@@ -48,7 +48,7 @@ export const Footer = () => {
                 height={40}
                 className="h-16 w-auto"
               />
-              <p className="text-[#19191B]">
+              <p className="text-[#19191B] max-w-[400px]">
                 OROX puts your money on autopilot with AI-powered quantitative
                 investing, risk-adjusted strategies, and secure
                 blockchain-backed growth.
@@ -77,7 +77,7 @@ export const Footer = () => {
 
             <div className="flex flex-col gap-4 mt-12">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-                <div className="grid grid-cols-3 sm:grid-cols-2 gap-x-4 gap-y-4">
+                <div className="grid grid-cols-3 sm:grid-cols-2 gap-x-2 gap-y-2">
                   {navigation.social.map((item) => (
                     <Link
                       key={item.name}
@@ -88,13 +88,13 @@ export const Footer = () => {
                       <Image
                         src={item.icon}
                         alt={item.name}
-                        width={24}
-                        height={24}
+                        width={30}
+                        height={30}
                       />
                     </Link>
                   ))}
                 </div>
-                <div className="text-sm text-gray-500">
+                <div className="flex flex-col items-end text-sm text-[#19191B]">
                   <p>© 2025 — Copyright</p>
                   <p>All Rights reserved</p>
                 </div>
@@ -115,17 +115,17 @@ export const Footer = () => {
             <hr className="my-8 border-t-2 border-[#999999]" />
 
             {/* Contact and Location Section */}
-            <div className="flex flex-col sm:flex-row gap-8 sm:gap-20">
+            <div className="flex flex-col sm:flex-row gap-8 sm:gap-20 flex-grow mt-48">
               <div>
                 <h3 className="text-xl font-bold mb-4">Contact us</h3>
-                <div className="space-y-2 text-[#19191B]">
+                <div className="space-y-2 text-gray-500">
                   <p>hello@oroxglobal.com</p>
                 </div>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold mb-4">Location</h3>
-                <div className="space-y-2 text-[#19191B]">
+                <div className="space-y-2 text-gray-500">
                   <p>2 Locomotive Street South Eveleigh, NSW 2015 Australia</p>
                   <p>201 Kent Street Sydney, NSW 2000 Australia</p>
                 </div>

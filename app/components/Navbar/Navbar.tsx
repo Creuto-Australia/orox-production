@@ -61,23 +61,15 @@ export const Navbar = () => {
                   <div className="text-center">
                     <span className="text-sm text-gray-500">OR</span>
                   </div>
-                  <button className="flex w-full items-center justify-center space-x-2 rounded-lg border border-gray-200 px-4 py-2 text-gray-600 hover:bg-gray-50">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3 15v2h2M3 5V3h2M17 15v2h-2M17 5V3h-2"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                    <span>Install APK</span>
+                  <button className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-2 text-gray-600 hover:bg-gray-50">
+                    <Image
+                      src="/icons/download.svg"
+                      alt="Download Icon"
+                      width={20}
+                      height={20}
+                      className="h-6 w-6"
+                    />
+                    <span className="font-bold text-[#293483]">Install APK</span>
                   </button>
 
                   <button
