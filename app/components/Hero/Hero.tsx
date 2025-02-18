@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 
-import { Button } from "../ui/Button";
 import { AppStoreButton } from "../ui/AppStoreButton";
 import { PlayStoreButton } from "../ui/PlayStoreButton";
 
@@ -15,7 +14,7 @@ export const Hero = () => {
             <div className="space-y-6 md:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <p className="text-[#383699] text-sm font-semibold">COMING SOON</p>
-                <h1 className="relative text-4xl font-bold leading-tight text-[#D2962B] sm:text-5xl md:text-6xl lg:text-7xl">
+                <h1 className="relative text-4xl font-bold leading-tight text-[#19191B] sm:text-5xl md:text-6xl lg:text-7xl">
                   Invest smarter.
                   <br />
                   Grow faster.
@@ -34,7 +33,7 @@ export const Hero = () => {
               </div>
 
               <div className="space-y-6">
-                <Button>Join for free</Button>
+                {/* <Button>Join for free</Button> */}
                 <div className="flex flex-wrap items-center gap-2">
                   <PlayStoreButton />
                   <AppStoreButton />
