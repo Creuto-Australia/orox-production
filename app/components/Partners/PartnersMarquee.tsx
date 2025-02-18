@@ -55,7 +55,7 @@ export const PartnersMarquee = () => {
                       alt={partner.name}
                       width={320}
                       height={128}
-                      className="w-auto h-8 sm:h-10 md:h-12 lg:h-16 object-contain"
+                      className="w-auto h-12 lg:h-16 object-contain"
                     />
                   </div>
                 ))}
