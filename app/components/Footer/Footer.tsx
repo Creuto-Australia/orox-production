@@ -108,8 +108,8 @@ export const Footer = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-60">
               <h3 className="text-xl font-bold">Download app</h3>
               <div className="flex gap-2 flex-wrap">
-                <PlayStoreButton />
-                <AppStoreButton />
+                <PlayStoreButton href="https://play.google.com/store/apps/details?id=com.oroxlabs.app.android&hl=en_AU " />
+                <AppStoreButton href="https://apps.apple.com/au/app/orox/id6452677869" />
               </div>
             </div>
             <hr className="my-8 border-t-2 border-[#999999]" />

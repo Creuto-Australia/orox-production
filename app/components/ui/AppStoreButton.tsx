@@ -1,8 +1,19 @@
 import Image from "next/image";
 
-export const AppStoreButton = () => {
+interface StoreButtonProps {
+  href: string;
+  target?: string;
+  rel?: string;
+}
+
+export const AppStoreButton = ({ href, target, rel }: StoreButtonProps) => {
   return (
-    <a href="#" className="inline-block transition-opacity hover:opacity-80">
+    <a
+      href={href}
+      target={target}
+      rel={rel}
+      className="inline-block transition-opacity hover:opacity-80"
+    >
       <Image
         src="/app-store-badge.png"
         alt="Download on the App Store"

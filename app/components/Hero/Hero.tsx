@@ -35,14 +35,9 @@ export const Hero = () => {
               </div>
 
               <div className="space-y-6">
-                {/* <Button>Join for free</Button> */}
                 <div className="flex flex-wrap items-center gap-2">
-                  <a href="https://onelink.to/65gpe9" target="_blank" rel="noopener noreferrer">
-                    <PlayStoreButton />
-                  </a>
-                  <a href="https://onelink.to/65gpe9" target="_blank" rel="noopener noreferrer">
-                    <AppStoreButton />
-                  </a>
+                  <PlayStoreButton href="https://play.google.com/store/apps/details?id=com.oroxlabs.app.android&hl=en_AU" />
+                  <AppStoreButton href="https://apps.apple.com/au/app/orox/id6452677869" />
                 </div>
               </div>
             </div>
