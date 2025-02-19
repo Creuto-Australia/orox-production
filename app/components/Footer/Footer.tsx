@@ -75,7 +75,7 @@ export const Footer = () => {
               </Link>
             </div>
 
-            <div className="flex flex-col gap-4 mt-12">
+            <div className="flex flex-col gap-4 mt-64">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
                 <div className="grid grid-cols-3 sm:grid-cols-2 gap-x-2 gap-y-2">
                   {navigation.social.map((item) => (
@@ -115,7 +115,7 @@ export const Footer = () => {
             <hr className="my-8 border-t-2 border-[#999999]" />
 
             {/* Contact and Location Section */}
-            <div className="flex flex-col sm:flex-row gap-8 sm:gap-20 flex-grow mt-48">
+            <div className="flex flex-col sm:flex-row gap-8 sm:gap-20 flex-grow mt-96">
               <div>
                 <h3 className="text-xl font-bold mb-4">Contact us</h3>
                 <div className="space-y-2 text-gray-500">

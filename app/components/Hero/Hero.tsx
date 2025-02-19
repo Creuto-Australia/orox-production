@@ -37,8 +37,12 @@ export const Hero = () => {
               <div className="space-y-6">
                 {/* <Button>Join for free</Button> */}
                 <div className="flex flex-wrap items-center gap-2">
-                  <PlayStoreButton />
-                  <AppStoreButton />
+                  <a href="https://onelink.to/65gpe9" target="_blank" rel="noopener noreferrer">
+                    <PlayStoreButton />
+                  </a>
+                  <a href="https://onelink.to/65gpe9" target="_blank" rel="noopener noreferrer">
+                    <AppStoreButton />
+                  </a>
                 </div>
               </div>
             </div>
