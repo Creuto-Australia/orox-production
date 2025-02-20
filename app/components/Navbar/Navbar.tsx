@@ -52,7 +52,7 @@ export const Navbar = () => {
               <div ref={qrModalRef} className="absolute right-0 top-full mt-4 w-80 rounded-lg bg-white p-4 shadow-lg">
                 <div className="space-y-4">
                   <Image
-                    src="/images/qr-code.png"
+                    src="/images/qr-code.jpg"
                     alt="OROX App QR Code"
                     width={300}
                     height={300}

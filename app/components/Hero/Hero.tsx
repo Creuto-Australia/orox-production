@@ -6,7 +6,7 @@ import { PlayStoreButton } from "../ui/PlayStoreButton";
 
 export const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white px-4 py-24 md:py-24">
+    <section className="relative w-full overflow-hidden bg-white px-4 pt-36 pb-4 md:pt-16 md:pb-4">
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-8 md:gap-16 lg:gap-48 lg:grid-cols-2">
           {/* Left Content */}
@@ -27,7 +27,7 @@ export const Hero = () => {
                     Build wealth.
                   </span>
                 </h1>
-                <p className="max-w-[540px] text-base md:text-lg text-gray-600">
+                <p className="max-w-[540px] text-base md:text-lg text-[#19191B]">
                   Forget stock-picking, market timing and waiting for the next
                   bull run—OROX puts your money on autopilot for high-growth
                   returns.
@@ -45,7 +45,7 @@ export const Hero = () => {
 
           {/* Right Content - Interactive Hero Image */}
           <div
-            className="relative w-full max-w-[420px] mx-auto h-auto flex justify-center items-center cursor-pointer"
+            className="relative w-full max-w-[260px] md:max-w-[400px] mx-auto h-auto flex justify-center items-center cursor-pointer"
             onClick={() => console.log("Hero image clicked")}
           >
             <Image
