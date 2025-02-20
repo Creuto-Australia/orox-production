@@ -111,12 +111,14 @@ export const Footer = () => {
 
             {/* Social Icons and Copyright */}
             <div className="flex justify-between items-center md:mt-56 mt-24">
-              <div className="grid grid-cols-2 gap-x-2 gap-y-2">
-                {navigation.social.map((item) => (
+              <div className="grid grid-flow-col grid-rows-2 gap-x-2 gap-y-2 w-fit">
+                {navigation.social.map((item, index) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-gray-400 hover:text-gray-600"
+                    className={`text-gray-400 hover:text-gray-600 ${
+                      index === 0 ? 'col-span-2 justify-self-start' : ''
+                    }`}
                   >
                     <span className="sr-only">{item.name}</span>
                     <Image
