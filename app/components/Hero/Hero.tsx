@@ -24,7 +24,7 @@ export const Hero = () => {
                   <span className="relative text-[#D2962B]">
                     {/* Yellow background decoration */}
                     {/* <span className="absolute left-0 top-[35%] -z-10 h-[60%] w-full bg-[#FFD700]/40 rounded-[8px]"></span> */}
-                    Build wealth.
+                    Build wealth<span className="text-[#19191B]">.</span>
                   </span>
                 </h1>
                 <p className="max-w-[540px] text-base md:text-lg text-[#19191B]">

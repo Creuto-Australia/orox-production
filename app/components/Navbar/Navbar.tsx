@@ -20,7 +20,7 @@ export const Navbar = () => {
 
   return (
     <header className="fixed top-0 z-50 w-full bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5">
+      <nav className="mx-auto flex items-center justify-between px-4 md:px-24 py-5 border-b border-[#F4F4F4]">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
           <Image
@@ -49,19 +49,21 @@ export const Navbar = () => {
 
             {/* QR Code Modal */}
             {isQROpen && (
-              <div ref={qrModalRef} className="absolute right-0 top-full mt-4 w-80 rounded-lg bg-white p-4 shadow-lg">
+              <div ref={qrModalRef} className="absolute right-0 top-full mt-5 w-72 sm:w-64 md:w-80 rounded-b-xl bg-white p-8 border border-[#F4F4F4]">
                 <div className="space-y-4">
                   <Image
-                    src="/images/qr-code.jpg"
+                    src="/images/qr-code.png"
                     alt="OROX App QR Code"
                     width={300}
                     height={300}
                     className="mx-auto"
                   />
-                  <div className="text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <hr className="w-2/3 h-tiny bg-[#C9CCE0]" />
                     <span className="text-sm text-gray-500">OR</span>
+                    <hr className="w-2/3 h-tiny bg-[#C9CCE0]" />
                   </div>
-                  <a href="https://onelink.to/65gpe9" className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-2 text-gray-600 hover:bg-gray-50">
+                  <a href="https://onelink.to/65gpe9" className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-1.5 text-gray-600 hover:bg-gray-50">
                     <Image
                       src="/icons/download.svg"
                       alt="Download Icon"
@@ -69,12 +71,12 @@ export const Navbar = () => {
                       height={20}
                       className="h-6 w-6"
                     />
-                    <span className="font-bold text-[#293483]">Install APK</span>
+                    <span className="font-semibold text-[#293483] text-sm">Install APK</span>
                   </a>
 
                   <button
                     onClick={() => setIsQROpen(false)}
-                    className="flex w-full items-center justify-end space-x-1 px-3 py-1 text-sm text-blue-600"
+                    className="flex w-full items-center justify-end space-x-1 px-3 pt-6 pb-1 text-sm text-blue-600 "
                   >
                     <svg
                       className="h-4 w-4"
@@ -89,7 +91,7 @@ export const Navbar = () => {
                         d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
-                    <span>Close</span>
+                    <span className="font-semibold">Close</span>
                   </button>
                 </div>
               </div>
