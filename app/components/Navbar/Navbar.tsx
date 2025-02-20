@@ -9,13 +9,16 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (qrModalRef.current && !qrModalRef.current.contains(event.target as Node)) {
+      if (
+        qrModalRef.current &&
+        !qrModalRef.current.contains(event.target as Node)
+      ) {
         setIsQROpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -49,37 +52,20 @@ export const Navbar = () => {
 
             {/* QR Code Modal */}
             {isQROpen && (
-              <div ref={qrModalRef} className="absolute right-0 top-full mt-5 w-72 sm:w-64 md:w-80 rounded-b-xl bg-white p-8 border border-[#F4F4F4]">
-                <div className="space-y-4">
-                  <Image
-                    src="/images/qr-code.png"
-                    alt="OROX App QR Code"
-                    width={300}
-                    height={300}
-                    className="mx-auto"
-                  />
-                  <div className="flex items-center justify-center space-x-2">
-                    <hr className="w-2/3 h-tiny bg-[#C9CCE0]" />
-                    <span className="text-sm text-gray-500">OR</span>
-                    <hr className="w-2/3 h-tiny bg-[#C9CCE0]" />
-                  </div>
-                  <a href="https://onelink.to/65gpe9" className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-1.5 text-gray-600 hover:bg-gray-50">
-                    <Image
-                      src="/icons/download.svg"
-                      alt="Download Icon"
-                      width={20}
-                      height={20}
-                      className="h-6 w-6"
-                    />
-                    <span className="font-semibold text-[#293483] text-sm">Install APK</span>
-                  </a>
-
+              <div 
+                ref={qrModalRef} 
+                className="fixed sm:absolute inset-0 sm:inset-auto sm:right-0 sm:top-full bg-white
+                          sm:mt-5 sm:w-64 md:w-80 sm:rounded-b-xl sm:border sm:border-[#F4F4F4] sm:p-8
+                          flex flex-col sm:block"
+              >
+                <div className="w-full h-full flex flex-col sm:block max-w-[90%] sm:w-auto mx-auto">
+                  {/* Close button for mobile - top right */}
                   <button
                     onClick={() => setIsQROpen(false)}
-                    className="flex w-full items-center justify-end space-x-1 px-3 pt-6 pb-1 text-sm text-blue-600"
+                    className="absolute right-4 top-4 p-2 text-[#293483] sm:hidden"
                   >
                     <svg
-                      className="h-4 w-4"
+                      className="h-6 w-6"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -91,8 +77,69 @@ export const Navbar = () => {
                         d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
-                    <span className="font-semibold">Close</span>
                   </button>
+
+                  <div className="bg-white rounded-2xl p-6 sm:p-0 h-full flex flex-col">
+                    <div className="flex flex-col h-full sm:h-auto">
+                      {/* QR Code - at the top */}
+                      <div className="flex-1 flex items-center justify-center sm:block pt-8 sm:pt-0">
+                        <Image
+                          src="/images/qr-code.png"
+                          alt="OROX App QR Code"
+                          width={300}
+                          height={300}
+                          className="w-[240px] max-w-[300px] h-auto"
+                        />
+                      </div>
+
+                      {/* Bottom section with OR and Install APK - pushed to bottom on mobile */}
+                      <div className="mt-auto sm:mt-0 space-y-6 sm:space-y-4">
+                        <div className="flex items-center justify-center space-x-2 w-full">
+                          <hr className="w-full h-[1px] bg-[#C9CCE0]" />
+                          <span className="text-sm text-gray-500 whitespace-nowrap px-2">
+                            OR
+                          </span>
+                          <hr className="w-full h-[1px] bg-[#C9CCE0]" />
+                        </div>
+
+                        <a
+                          href="https://onelink.to/65gpe9"
+                          className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-3 text-gray-600 hover:bg-gray-50"
+                        >
+                          <Image
+                            src="/icons/download.svg"
+                            alt="Download Icon"
+                            width={20}
+                            height={20}
+                            className="h-5 w-5"
+                          />
+                          <span className="font-semibold text-[#293483] text-sm">
+                            Install APK
+                          </span>
+                        </a>
+
+                        <button
+                          onClick={() => setIsQROpen(false)}
+                          className="hidden sm:flex w-full items-center justify-end space-x-1 text-sm text-[#2F5DFD]"
+                        >
+                          <svg
+                            className="h-4 w-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                          <span className="font-semibold">Close</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
