@@ -52,7 +52,7 @@ export const Footer = () => {
             {/* Description */}
             <p className="text-[#19191B] max-w-[400px] mb-6">
               OROX puts your money on autopilot with AI-powered quantitative
-              investing, risk-adjusted strategies, and secure blockchain-backed
+              investing, risk-adjusted strategies and secure blockchain-backed
               growth.
             </p>
 
