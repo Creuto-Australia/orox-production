@@ -37,7 +37,7 @@ export const Navbar = () => {
           {/* QR Code Button */}
           <button
             onClick={() => setIsQROpen(!isQROpen)}
-            className="relative flex h-10 w-10 items-center justify-center"
+            className="relative flex h-12 w-12 items-center justify-center hover:bg-[#E9E9EF] rounded-[8px] p-2"
           >
             <Image
               src="/icons/QR.svg"
@@ -76,7 +76,7 @@ export const Navbar = () => {
 
                   <button
                     onClick={() => setIsQROpen(false)}
-                    className="flex w-full items-center justify-end space-x-1 px-3 pt-6 pb-1 text-sm text-blue-600 "
+                    className="flex w-full items-center justify-end space-x-1 px-3 pt-6 pb-1 text-sm text-blue-600"
                   >
                     <svg
                       className="h-4 w-4"
