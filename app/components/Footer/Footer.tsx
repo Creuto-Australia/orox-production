@@ -58,7 +58,7 @@ export const Footer = () => {
 
             {/* More About Us Button */}
             <Link
-              href="#"
+              href="https://www.opusmomentus.com/"
               className="inline-flex items-center font-bold text-[#2F5DFD] hover:text-[#2F5DFD] mb-12"
             >
               <span>More about us</span>
