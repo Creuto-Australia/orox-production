@@ -61,7 +61,7 @@ export const Navbar = () => {
                   <div className="text-center">
                     <span className="text-sm text-gray-500">OR</span>
                   </div>
-                  <button className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-2 text-gray-600 hover:bg-gray-50">
+                  <a href="https://onelink.to/65gpe9" className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-2 text-gray-600 hover:bg-gray-50">
                     <Image
                       src="/icons/download.svg"
                       alt="Download Icon"
@@ -70,7 +70,7 @@ export const Navbar = () => {
                       className="h-6 w-6"
                     />
                     <span className="font-bold text-[#293483]">Install APK</span>
-                  </button>
+                  </a>
 
                   <button
                     onClick={() => setIsQROpen(false)}
