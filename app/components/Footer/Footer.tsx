@@ -95,7 +95,7 @@ export const Footer = () => {
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">Contact us</h3>
                 <div className="space-y-2 text-gray-500">
-                  <p>+61 2XX XXX XXX</p>
+                  {/* <p>+61 2XX XXX XXX</p> */}
                   <p>hello@oroxglobal.com</p>
                 </div>
               </div>
