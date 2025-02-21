@@ -1,5 +1,8 @@
+"use client";
+
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const PARTNERS = [
   {
@@ -29,6 +32,21 @@ const PARTNERS = [
 ];
 
 export const PartnersMarquee = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="py-4 sm:py-6 md:py-8 bg-[#070926] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -40,9 +58,10 @@ export const PartnersMarquee = () => {
           <div className="flex-1">
             <Marquee
               gradient={true}
-              gradientColor="#0A0B1E"
+              gradientColor="#070926"
               speed={40}
               className="overflow-hidden"
+              gradientWidth={isMobile ? 50 : 100}
             >
               <div className="flex items-center gap-12 px-4">
                 {[...PARTNERS, ...PARTNERS].map((partner, index) => (
