@@ -52,11 +52,11 @@ export const Navbar = () => {
 
             {/* QR Code Modal */}
             {isQROpen && (
-              <div 
-                ref={qrModalRef} 
+              <div
+                ref={qrModalRef}
                 className="fixed sm:absolute inset-0 sm:inset-auto sm:right-0 sm:top-full bg-white
                           sm:mt-5 sm:w-64 md:w-80 sm:rounded-b-xl sm:border sm:border-[#F4F4F4] sm:p-8
-                          flex flex-col sm:block"
+                          flex flex-col sm:block shadow-[0px_8px_32px_0px_rgba(0,0,0,0.15)]"
               >
                 <div className="w-full h-full flex flex-col sm:block max-w-[90%] sm:w-auto mx-auto">
                   {/* Close button for mobile - top right */}
@@ -82,7 +82,7 @@ export const Navbar = () => {
                   <div className="bg-white rounded-2xl p-6 sm:p-0 h-full flex flex-col">
                     <div className="flex flex-col h-full sm:h-auto">
                       {/* QR Code - at the top */}
-                      <div className="flex-1 flex items-center justify-center sm:block pt-8 sm:pt-0">
+                      <div className="flex-1 flex items-center justify-center sm:block pt-8 sm:pt-0 mb-8">
                         <Image
                           src="/images/qr-code.png"
                           alt="OROX App QR Code"
@@ -96,7 +96,7 @@ export const Navbar = () => {
                       <div className="mt-auto sm:mt-0 space-y-6 sm:space-y-4">
                         <div className="flex items-center justify-center space-x-2 w-full">
                           <hr className="w-full h-[1px] bg-[#C9CCE0]" />
-                          <span className="text-sm text-gray-500 whitespace-nowrap px-2">
+                          <span className="text-xs text-[#293483] whitespace-nowrap px-2">
                             OR
                           </span>
                           <hr className="w-full h-[1px] bg-[#C9CCE0]" />
@@ -104,7 +104,7 @@ export const Navbar = () => {
 
                         <a
                           href="https://onelink.to/65gpe9"
-                          className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-4 py-3 text-gray-600 hover:bg-gray-50"
+                          className="flex w-full items-center justify-center space-x-2 rounded-full border border-[#78CAB9] px-6 py-2 text-gray-600 hover:bg-gray-50 text-[14px]"
                         >
                           <Image
                             src="/icons/download.svg"
@@ -113,7 +113,7 @@ export const Navbar = () => {
                             height={20}
                             className="h-5 w-5"
                           />
-                          <span className="font-semibold text-[#293483] text-sm">
+                          <span className="font-semibold text-[#293483] text-[14px]">
                             Install APK
                           </span>
                         </a>

@@ -170,16 +170,18 @@ export const Footer = () => {
         </div>
       </div>
       {/* Disclaimer Section */}
-      <div className="px-4 py-4 md:px-36 md:py-8 bg-[#EAF5FF] text-[#19191B] text-sm">
-        <p>© 2025 Opus Momentus Proprietary Ltd. All Rights Reserved.</p>
-        <br />
-        <p>
-          The materials on this website are for illustration and discussion
-          purposes only and do not constitute an offering. An offering may be
-          made only by delivery of a confidential offering memorandum to
-          appropriate investors. PAST PERFORMANCE IS NO GUARANTEE OF FUTURE
-          RESULTS.
-        </p>
+      <div className="bg-[#EAF5FF] text-[#19191B] text-sm">
+        <div className="max-w-7xl mx-auto py-8 md:py-8">
+          <p>© 2025 Opus Momentus Proprietary Ltd. All Rights Reserved.</p>
+          <br />
+          <p>
+            The materials on this website are for illustration and discussion
+            purposes only and do not constitute an offering. An offering may be
+            made only by delivery of a confidential offering memorandum to
+            appropriate investors. PAST PERFORMANCE IS NO GUARANTEE OF FUTURE
+            RESULTS.
+          </p>
+        </div>
       </div>
     </footer>
   );
