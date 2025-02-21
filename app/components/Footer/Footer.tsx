@@ -7,12 +7,12 @@ const navigation = {
   social: [
     {
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/company/oroxapp/",
       icon: "/icons/socials/Item.svg",
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/oroxapp?igsh=MXJxYW5hMTY3Y3J5OQ%3D%3D&utm_source=qr",
       icon: "/icons/socials/Item-1.svg",
     },
     // {
@@ -27,7 +27,7 @@ const navigation = {
     // },
     {
       name: "Twitter",
-      href: "#",
+      href: "https://x.com/oroxapp?s=11",
       icon: "/icons/socials/Item-4.svg",
     },
   ],
@@ -116,8 +116,9 @@ export const Footer = () => {
                   <Link
                     key={item.name}
                     href={item.href}
+                    target="_blank"
                     className={`text-gray-400 hover:text-gray-600 ${
-                      index === 0 ? 'col-span-2 justify-self-start' : ''
+                      index === 0 ? "col-span-2 justify-self-start" : ""
                     }`}
                   >
                     <span className="sr-only">{item.name}</span>
