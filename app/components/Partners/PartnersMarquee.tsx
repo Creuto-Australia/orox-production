@@ -63,7 +63,7 @@ export const PartnersMarquee = () => {
               className="overflow-hidden"
               gradientWidth={isMobile ? 50 : 100}
             >
-              <div className="flex items-center gap-6 sm:gap-8 px-4 sm:px-10">
+              <div className="flex items-center gap-8 sm:gap-10 px-4 sm:px-10">
                 {[...PARTNERS, ...PARTNERS].map((partner, index) => (
                   <div
                     key={`${partner.name}-${index}`}
@@ -74,7 +74,7 @@ export const PartnersMarquee = () => {
                       alt={partner.name}
                       width={320}
                       height={128}
-                      className="w-auto h-14 sm:h-16 md:h-20 object-contain"
+                      className="w-auto h-12 sm:h-14 md:h-16 object-contain"
                     />
                   </div>
                 ))}
