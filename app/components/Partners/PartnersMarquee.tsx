@@ -59,15 +59,15 @@ export const PartnersMarquee = () => {
             <Marquee
               gradient={true}
               gradientColor="#070926"
-              speed={30}
+              speed={60}
               className="overflow-hidden"
               gradientWidth={isMobile ? 50 : 100}
             >
-              <div className="flex items-center gap-8 sm:gap-12 px-4">
+              <div className="flex items-center gap-6 sm:gap-8 px-4 sm:px-10">
                 {[...PARTNERS, ...PARTNERS].map((partner, index) => (
                   <div
                     key={`${partner.name}-${index}`}
-                    className="flex items-center justify-center min-w-[100px] sm:min-w-[140px]"
+                    className="flex items-center justify-center min-w-[120px] sm:min-w-[160px]"
                   >
                     <Image
                       src={partner.logo}
