@@ -64,7 +64,7 @@ export const PartnersMarquee = () => {
               gradientWidth={isMobile ? 50 : 100}
             >
               <div className="flex items-center gap-8 sm:gap-10 px-4 sm:px-10">
-                {[...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS].map(
+                {[...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS].map(
                   (partner, index) => (
                     <div
                       key={`${partner.name}-${index}`}
