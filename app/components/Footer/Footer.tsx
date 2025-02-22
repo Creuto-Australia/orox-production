@@ -59,7 +59,7 @@ export const Footer = () => {
             {/* More About Us Button */}
             <Link
               href="https://www.opusmomentus.com/"
-              className="inline-flex items-center font-bold text-[#2F5DFD] hover:text-[#2F5DFD] mb-12"
+              className="inline-flex items-center font-bold text-[#2F5DFD] hover:text-[#2F5DFD] mb-12 text-[14px]"
             >
               <span>More about us</span>
               <svg
@@ -171,7 +171,7 @@ export const Footer = () => {
       </div>
       {/* Disclaimer Section */}
       <div className="bg-[#EAF5FF] text-[#19191B] text-sm">
-        <div className="max-w-7xl mx-auto py-8 md:py-8">
+        <div className="max-w-7xl mx-4 md:mx-auto py-8 md:py-8">
           <p>© 2025 Opus Momentus Proprietary Ltd. All Rights Reserved.</p>
           <br />
           <p>
