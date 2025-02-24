@@ -23,7 +23,7 @@ export const Navbar = () => {
 
   return (
     <header className="fixed top-0 z-50 w-full bg-white">
-      <nav className="mx-auto flex items-center justify-between px-4 md:px-24 py-5 border-b border-[#F4F4F4]">
+      <nav className="mx-auto max-w-7xl flex items-center justify-between py-5 border-b border-[#F4F4F4]">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
           <Image

@@ -36,7 +36,7 @@ const navigation = {
 export const Footer = () => {
   return (
     <footer className="bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-8 md:py-16">
+      <div className="mx-auto max-w-7xl px-4 py-8 md:py-[36px]">
         <div className="flex flex-col lg:flex-row justify-between">
           {/* Main Content Column */}
           <div className="w-full lg:max-w-md">
