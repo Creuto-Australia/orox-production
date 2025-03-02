@@ -50,7 +50,7 @@ export const Footer = () => {
             />
 
             {/* Description */}
-            <p className="text-[#19191B] max-w-[400px] mb-6">
+            <p className="text-[#19191B] max-w-[400px] mb-6 text-[16px]">
               OROX puts your money on autopilot with AI-powered quantitative
               investing, risk-adjusted strategies and secure blockchain-backed
               growth.
@@ -80,7 +80,7 @@ export const Footer = () => {
 
             {/* Download App Section */}
             <div className="lg:hidden">
-              <h3 className="text-xl font-bold mb-4">Download app</h3>
+              <h3 className="text-[28px] font-bold mb-4">Download app</h3>
               <div className="flex gap-2 flex-wrap mb-8">
                 <PlayStoreButton href="https://play.google.com/store/apps/details?id=com.oroxlabs.app.android&hl=en_AU " />
                 <AppStoreButton href="https://apps.apple.com/au/app/orox/id6452677869" />
@@ -93,16 +93,16 @@ export const Footer = () => {
             {/* Contact and Location */}
             <div className="lg:hidden mb-12">
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">Contact us</h3>
-                <div className="space-y-2 text-gray-500">
+                <h3 className="text-[20px] font-bold mb-[24px]">Contact us</h3>
+                <div className="space-y-2 text-black/50 text-[14px]">
                   {/* <p>+61 2XX XXX XXX</p> */}
                   <p>hello@oroxglobal.com</p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold mb-4 mt-24">Location</h3>
-                <div className="space-y-2 text-gray-500">
+                <h3 className="text-[20px] font-bold mb-[24px]">Location</h3>
+                <div className="space-y-2 text-black/50 text-[14px]">
                   <p>2 Locomotive Street, South Eveleigh NSW 2015 Australia</p>
                   <p>201 Kent Street, Sydney NSW 2000 Australia</p>
                 </div>
@@ -110,7 +110,7 @@ export const Footer = () => {
             </div>
 
             {/* Social Icons and Copyright */}
-            <div className="flex justify-between items-center md:mt-56 mt-24">
+            <div className="flex justify-between items-center md:mt-36 mt-24">
               <div className="grid grid-flow-col grid-rows-2 gap-x-2 gap-y-2 w-fit">
                 {navigation.social.map((item, index) => (
                   <Link
@@ -131,7 +131,7 @@ export const Footer = () => {
                   </Link>
                 ))}
               </div>
-              <div className="text-sm text-[#19191B] text-right">
+              <div className="text-[12px] text-[#19191B] text-right">
                 <p>© 2025 — Copyright</p>
                 <p>All Rights reserved</p>
               </div>
@@ -142,7 +142,7 @@ export const Footer = () => {
           <div className="mt-12 lg:mt-0">
             {/* Download App Section */}
             <div className="hidden lg:flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-60">
-              <h3 className="text-xl font-bold">Download app</h3>
+              <h3 className="text-[28px] font-bold">Download app</h3>
               <div className="flex gap-2 flex-wrap">
                 <PlayStoreButton href="https://play.google.com/store/apps/details?id=com.oroxlabs.app.android&hl=en_AU " />
                 <AppStoreButton href="https://apps.apple.com/au/app/orox/id6452677869" />
@@ -151,16 +151,16 @@ export const Footer = () => {
             <hr className="my-8 border-t-2 border-[#999999] hidden lg:block" />
 
             {/* Contact and Location Section */}
-            <div className="hidden lg:flex flex-col sm:flex-row gap-8 sm:gap-20 flex-grow mt-96">
+            <div className="hidden lg:flex flex-col sm:flex-row gap-8 sm:gap-20 flex-grow mt-72">
               <div>
-                <h3 className="text-xl font-bold mb-6">Contact us</h3>
-                <div className="space-y-2 text-gray-500">
+                <h3 className="text-[20px] font-bold mb-[24px]">Contact us</h3>
+                <div className="space-y-2 text-black/50 text-[14px]">
                   <p>hello@oroxglobal.com</p>
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-6">Location</h3>
-                <div className="space-y-4 text-gray-500">
+                <h3 className="text-[20px] font-bold mb-6">Location</h3>
+                <div className="space-y-4 text-black/50 text-[14px]">
                   <p>2 Locomotive Street South Eveleigh, NSW 2015 Australia</p>
                   <p>201 Kent Street Sydney, NSW 2000 Australia</p>
                 </div>
@@ -170,7 +170,7 @@ export const Footer = () => {
         </div>
       </div>
       {/* Disclaimer Section */}
-      <div className="bg-[#EAF5FF] text-[#19191B] text-sm">
+      <div className="bg-[#EAF5FF] text-[#19191B]/60 text-[12px]">
         <div className="max-w-7xl mx-4 md:mx-auto py-8 md:py-8">
           <p>© 2025 Opus Momentus Proprietary Ltd. All Rights Reserved.</p>
           <br />
