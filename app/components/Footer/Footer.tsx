@@ -80,7 +80,7 @@ export const Footer = () => {
 
             {/* Download App Section */}
             <div className="lg:hidden">
-              <h3 className="text-[28px] font-bold mb-4">Download app</h3>
+              <h3 className="text-[18px] font-bold mb-4">Download app</h3>
               <div className="flex gap-2 flex-wrap mb-8">
                 <PlayStoreButton href="https://play.google.com/store/apps/details?id=com.oroxlabs.app.android&hl=en_AU " />
                 <AppStoreButton href="https://apps.apple.com/au/app/orox/id6452677869" />
