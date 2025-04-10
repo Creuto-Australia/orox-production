@@ -57,4 +57,4 @@ jobs:
           host: ${{ secrets.HOST }} # Pass server IP
           username: ${{ secrets.USERNAME }} # Pass server username
           key: ${{ secrets.KEY }} # Pass server ssh private key
-          script: /home/ubuntu/deployOrox.sh
+          script: /home/ubuntu/deployWeb.sh
